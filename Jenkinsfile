@@ -1,13 +1,10 @@
 pipeline{
-    agent {
-        label 'rhel'
-    }
-
+    
     stages{
 
         stage('Pull Repo'){
             steps {
-                git 'https://github.com/asquarezone/spring-petclinic.git'
+                git 'https://github.com/vardhanpam/spring-petclinic'
                 
             }
         }
